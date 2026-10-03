@@ -60,6 +60,17 @@ internal class Program
         center.PrintAllShipments();
         #endregion
 
+        #region practical ans [i]
+        DeliveryHelper.PrintShipmentDetails(STshipment);
+        DeliveryHelper.PrintShipmentDetails(EXshipment);
+        DeliveryHelper.PrintShipmentDetails(INshipment);
+        #endregion
+
+        #region practical ans [j]
+        STshipment.Weight_update(10);
+        EXshipment.Weight_update(5, 15);
+        #endregion
+
        
     }
 }
