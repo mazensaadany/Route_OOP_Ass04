@@ -46,6 +46,12 @@ internal class Program
         center.AssignedDriver = driver;
         #endregion
 
+        #region practical ans [d:f]
+        StandardShipment STshipment = new StandardShipment();
+        ExpressShipment EXshipment = new ExpressShipment();
+        InternationalShipment INshipment = new InternationalShipment();
+        #endregion
+
        
     }
 }
