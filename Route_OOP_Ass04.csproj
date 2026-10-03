@@ -7,4 +7,14 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Route_OOP_02\Route_OOP_02.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Route_OOP_02">
+      <HintPath>..\Route_OOP_02\bin\Debug\net9.0\Route_OOP_02.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

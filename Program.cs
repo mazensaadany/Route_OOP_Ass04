@@ -1,4 +1,5 @@
 ﻿namespace Route_OOP_Ass04;
+using Route_OOP_02;
 internal class Program
 {
     static void Main(string[] args)
@@ -38,7 +39,13 @@ internal class Program
         #endregion
         //**********************************************************//
 
-        #region practical ans 1
+        #region practical ans [a:c]
+        Driver driver = new Driver();
+        DeliveryCenter center = new DeliveryCenter();
+
+        center.AssignedDriver = driver;
+        #endregion
+
+       
     }
 }
-
