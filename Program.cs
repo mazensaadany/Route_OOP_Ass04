@@ -71,6 +71,37 @@ internal class Program
         EXshipment.Weight_update(5, 15);
         #endregion
 
-       
+        #region practical ans [k]
+        Shipment[] shipments = new Shipment[3];
+        shipments[0] = STshipment;
+        shipments[1] = EXshipment;
+        shipments[2] = INshipment;
+
+        foreach (Shipment shipment in shipments)
+        {
+            if (shipment != null)
+            {
+                if (shipment is StandardShipment)
+                {
+                    Console.WriteLine("Standard Shipment:");
+                }
+                else if (shipment is ExpressShipment)
+                {
+                    Console.WriteLine("Express Shipment:");
+                }
+                else if (shipment is InternationalShipment)
+                {
+                    Console.WriteLine("International Shipment:");
+                }
+            }
+        }
+        #endregion
+
+        #region practical ans [l]
+        CompletedShipment completedShipment = new CompletedShipment();
+
+        PriorityInternationalShipment PIShipment = new PriorityInternationalShipment();
+        PIShipment.GenerateCustomsReport();
+        #endregion
     }
 }
