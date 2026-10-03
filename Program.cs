@@ -52,6 +52,14 @@ internal class Program
         InternationalShipment INshipment = new InternationalShipment();
         #endregion
 
+        #region practical ans [g,h]
+        center.AddShipment(STshipment);
+        center.AddShipment(EXshipment);
+        center.AddShipment(INshipment);
+
+        center.PrintAllShipments();
+        #endregion
+
        
     }
 }
